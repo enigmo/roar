@@ -123,7 +123,7 @@ module Roar
 
           return super(hash, options) if options[:only_body] # singular
 
-          super(from_document(hash)) # singular
+          super(from_document(hash), options) # singular
         end
 
       private
